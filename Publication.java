@@ -37,10 +37,10 @@ public class Publication {
 
     public void afficherAuteur(){
 
-            if (getUtilisateur()== new UtilisateurInscrit() ){
-                System.out.println();
-            } else if (getUtilisateur()== new UtilisateurNonInscrit()) {
-                System.out.println();
+            if (getUtilisateur().getClass() == UtilisateurInscrit.class ) {
+                System.out.println(utilisateur.toString());
+            } else if (getUtilisateur().getClass() == UtilisateurNonInscrit.class ) {
+                System.out.println(utilisateur.toString());
             }
 
     }
